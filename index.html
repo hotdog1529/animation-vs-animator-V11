@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Animator OS V10</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="desktop">
+
+  <!-- Icons -->
+  <div class="icon" ondblclick="startStory()">🎬 Story</div>
+  <div class="icon" ondblclick="startSandbox()">🛠 Sandbox</div>
+  <div class="icon" ondblclick="startPvP()">⚔ PvP</div>
+
+  <!-- Windows -->
+  <div class="window" id="paintWindow" style="left:100px;top:120px;">
+    <div class="titlebar">Paint</div>
+    <canvas id="paintCanvas"></canvas>
+  </div>
+
+  <div class="window" id="notepadWindow" style="left:350px;top:150px;">
+    <div class="titlebar">Notepad</div>
+    <textarea id="notepad"></textarea>
+  </div>
+
+  <!-- Main canvas -->
+  <canvas id="canvas"></canvas>
+
+  <!-- Cursor -->
+  <div id="cursor"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
